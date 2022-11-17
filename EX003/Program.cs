@@ -12,7 +12,7 @@ int num(string text)
 } 
 //2. вывод на печать числа n--=>1; 
  
-int Ackerman_M_to_N(int M,int N) 
+double Ackerman_M_to_N(int M,double N) 
 { 
      
     if (M!=0&&N==0)return Ackerman_M_to_N(M-1,1); 
@@ -27,5 +27,5 @@ int M=num("число M");
 int N=num("число N"); 
 Console.WriteLine(); 
 int A=0; 
-int S=Ackerman_M_to_N(M,N); 
+double S=Ackerman_M_to_N(M,N); 
 Console.WriteLine($"Результат вычисления функции Аккермана с помощью рекурсии Для M & N = {S}");
